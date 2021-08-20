@@ -21,7 +21,7 @@ const connection =  mysql.createConnection({
 
 connection.connect();
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Sever started successfully @ http://localhost:${port}`);
 })
 
