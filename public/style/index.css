@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+header{
+    padding: 1vmin 3vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vmin;
+}
+
+header h1{
+    font-weight: 600;
+}
+
+header nav.nav-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav.nav-header h3{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+}
+
+header nav.nav-header h3:hover{
+    background-color: black;
+    color: white;
+}
+
+.popup-login{
+    display: none;
+    position: absolute;
+    left: 25%;
+    background-color: white;
+    top: 5%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #f1f1f1;
+    padding: 0.5rem 3rem;
+    margin: 0rem auto;
+    z-index: 9;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 0.7rem;
+}
+
+.popup-login h1{
+    font-size: 2rem;
+}
+
+.popup-login label{
+    font-size: 1rem;
+}
+
+.popup-login .btn{
+    font-weight: 600;
+    border-radius:0.7rem ;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 0.6rem;
+}
+
+.form-container .btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    /* padding: 16px 20px; */
+    margin: 0 auto;
+    padding: 0.8rem 1rem;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+  /* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.main-body-section{
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 1rem;
+    width: 97vw;
+    z-index: 1;
+}
+
+.sidebar{
+    width: 30%;
+    padding: 2rem;
+}
+
+.product-section{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto; 
+}
+
+.product-card{
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+    /* height: 15rem; */
+    max-height: 18rem;
+    width: 30rem;
+    box-shadow: 2px 2px 10px grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product-card:hover{
+    box-shadow: 2px 2px 20px grey;
+}
+
+.image-container{
+    padding: 1rem 0;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.prod-details-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem 2rem;
+}
+
+img.disp-image{
+    height: 150px;
+    width: 90%;
+    object-fit: contain;
+}
+
+h1.prod-title{
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+}
+
+h3.price{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.prod-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.prod-btn-container button.prod-btn{
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.4rem;
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    transition: 0.3s ease-in-out;
+}
+
+.prod-btn-container button.prod-btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+h3.category{
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+h3.category:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    cursor: pointer;
+}
+
+.welcome-section{
+    margin: 0rem 8rem;
+}
+
+.welcome-section h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.welcome-section h1 span{
+    font-size: 3rem;
+    /* font-weight: bold; */
+    margin-left: 3rem;
+}
+

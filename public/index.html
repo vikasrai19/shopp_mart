@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Shop Mart</title>
+</head>
+<body>
+    <header>
+        <div class="headerSection">
+            <h1> Shopp Mart</h1>
+        </div>
+        <nav class="nav-header" id="nav-header">
+            <!-- <h3 class="links" id="links">
+                Cart
+            </h3>
+            <h3 class="nav-links">
+                Sign In
+            </h3> -->
+        </nav>
+    </header>
+
+    <div class="popup-login" id="popup-login">
+        <form id="login-form" class="form-container">
+            <h1 id = 'title_b'>Login</h1>
+        
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+        
+            <div class="btn-container">
+                <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn cancel" id="cancel-btn">Close</button>
+            </div>
+          </form>
+    </div>
+
+    <div class="popup-login" id="popup-signup">
+        <form id="login-form-s" class="form-container">
+            <h1>Sign Up</h1>
+        
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" id="username-s" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="password-s" required>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Username" name="name" id="name-s" required>
+
+            <label for="address"><b>Address</b></label>
+            <input type="text" placeholder="Enter Address" name="address" id="address-s" required>
+        
+            <div class="btn-container">
+                <button type="submit" class="btn">Sign Up</button>
+            <button type="submit" class="btn cancel" id="cancel-btn-s">Close</button>
+            </div>
+          </form>
+    </div>
+
+    <div class="welcome-section" id="welcome-section">
+        <!-- <h1>
+            Welcome <br><span>vikas</span>
+        </h1> -->
+    </div>
+
+    <div class="main-body-section">
+        <div class="sidebar" id="sidebar">
+            <h2>
+                Categories
+            </h1>
+        </div>
+        <div class="product-section" id="product-section">    </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

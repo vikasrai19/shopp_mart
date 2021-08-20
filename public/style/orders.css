@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins';
+}
+
+h3.message{
+    font-weight: normal;
+
+}
+
+.main-section{
+    width: 100vw;
+    display: flex;
+}
+
+.cart-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 2px;
+}
+
+.message-container{
+    height: 10rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-container{
+    padding: 10px 20px;
+}
+
+.cart-card{
+    height: 15rem;
+    /* width: 45%; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.cart-card:hover {
+    box-shadow: 0px 2px 10px grey;
+}
+
+.img{
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.image-container{
+    object-fit: contain;
+    width: 100%;
+}
+
+/* .total-amount-container{ */
+    /* margin-bottom: 40px; */
+    /* padding: 4px 16px;
+    width: 25%;
+    box-shadow: 0px 2px 10px grey;
+    border-radius: 5px;
+} */
+
+.desc-container{
+    padding: 10px 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h2.card-title{
+    text-overflow: ellipsis;
+    height: 5rem;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button.buttons{
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+}
+
+button.buttons:hover{
+    background-color: black;
+    color: white;
+}
+
+.order-list-container{
+    display: flex;
+    padding: 5px 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h4.order-status{
+    font-weight: normal;
+}
