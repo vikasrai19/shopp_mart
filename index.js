@@ -3,12 +3,14 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const bcrypt = require('bcrypt');
 const { dest } = require('./services/common');
+const cors = require('cors')
 
 
 const app = express();
 const port = 3000;
 const saltRounds = 2;
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('public'))
 
