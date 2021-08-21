@@ -25,7 +25,6 @@ const connection = mysql.createConnection({
     "host": "192.168.1.33",
     "user": "vikasrai",
     "password": "vikasrai",
-    // "port": "3306",
     "port": 3306,
     "database": "shopp_mart",
 })
