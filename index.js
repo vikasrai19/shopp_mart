@@ -14,11 +14,22 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('public'))
 
-const connection =  mysql.createConnection({
-    'host': 'localhost',
-    'user': 'vikasrai19',
-    'password': 'vikasrai',
-    'database': 'shopp_mart',
+// const connection =  mysql.createConnection({
+//     'host': 'localhost',
+//     'user': 'vikasrai19',
+//     'password': 'vikasrai',
+//     'database': 'shopp_mart',
+// })
+
+const connection = mysql.createConnection({
+    // "host": "sql309.epizy.com ",
+    // "host": "185.27.134.10",
+    "host": "192.168.0.6",
+    "user": "epiz_29486851",
+    "password": "ZVObMAoJEzi",
+    // "port": "3306",
+    "port": 3306,
+    "database": "epiz_29486851_shopp_mart",
 })
 
 connection.connect();
