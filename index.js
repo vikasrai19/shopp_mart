@@ -14,20 +14,20 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('public'))
 
-// const connection =  mysql.createConnection({
-//     'host': 'localhost',
-//     'user': 'vikasrai19',
-//     'password': 'vikasrai',
-//     'database': 'shopp_mart',
-// })
+ const connection =  mysql.createConnection({
+     'host': 'localhost',
+     'user': 'vikasrai19',
+     'password': 'vikasrai',
+     'database': 'shopp_mart',
+ })
 
-const connection = mysql.createConnection({
-    "host": "192.168.1.33",
-    "user": "vikasrai",
-    "password": "vikasrai",
-    "port": 3306,
-    "database": "shopp_mart",
-})
+//const connection = mysql.createConnection({
+//    "host": "192.168.1.33",
+//    "user": "vikasrai",
+//    "password": "vikasrai",
+//    "port": 3306,
+//    "database": "shopp_mart",
+//})
 
 connection.connect();
 
